@@ -13,7 +13,7 @@ function mostrar()
 	Math.floor redondea el numero para abajo
 
 	la formula es:
-	Math.floor(Math.random() * ((numero mayor- numero menor) + 1)))
+	Math.floor(Math.random() * ((numero mayor - numero menor) + 1)))
 
 
 	*/

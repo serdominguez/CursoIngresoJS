@@ -15,13 +15,17 @@ function mostrar()
 	if (numero < 4)
 	{
 		alert ("Vamos, la proxima se puede ");
-	} else if (numero >= 4 && numero <= 8 )
+	} else 
 	{
-		alert ("APROBÓ ");
-	} else
-	{
-		alert ("EXCELENTE ");
+		if (numero>8 )
+		{
+			alert ("EXCELENTE");
+		} else
+		{ 
+			alert ("APROBO");
+		}
 	}
+	
 	
 
 }//FIN DE LA FUNCIÓN

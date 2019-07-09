@@ -11,6 +11,11 @@ function mostrar()
 	/* 
 	Math.random genera numero entre 0 y 1 (con muchos decimales)
 	Math.floor redondea el numero para abajo
+
+	la formula es:
+	Math.floor(Math.random() * ((numero mayor- numero menor) + 1)))
+
+
 	*/
 	
 	/*

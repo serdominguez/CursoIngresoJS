@@ -30,7 +30,7 @@ function CalcularPrecio ()
 
     marca = document.getElementById('Marca').value; //cargo variable marca
 
-    switch (lamparas)   //realizo iteraciones para 5, 4, 3, menos de 2 y mas de 6 (default) lamparas
+    switch (lamparas)   
     {
         case 5:     
             if (marca=="ArgentinaLuz")

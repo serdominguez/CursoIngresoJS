@@ -11,7 +11,7 @@ function mostrar()
 
 	while (cont>0)
 	{
-		console.log(cont);
+		console.log(con);
 		cont--;
 	}
 

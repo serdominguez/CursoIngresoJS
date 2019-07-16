@@ -18,7 +18,81 @@ siguiente mensaje:
  */
 function CalcularPrecio () 
 {
+    var lamparas;   //declaro variables
+    var marca;
+    var precio;
+    var iBrutos;
 
+    lamparas = document.getElementById('Cantidad').value;   //cargo variable
+    lamparas = parseInt(lamparas);      //transformo en numero
+
+    precio = lamparas*35;       //defino precio por cada lampara
+
+    marca = document.getElementById('Marca').value; //cargo variable marca
+
+    switch (lamparas)   //realizo iteraciones para 5, 4, 3, menos de 2 y mas de 6 (default) lamparas
+    {
+        case 5:     
+            if (marca=="ArgentinaLuz")
+            {
+                precio=precio-(precio*40/100);
+                
+            } else
+            {
+                precio =precio-(precio*30/100);
+            }
+            break;
+        case 4:     
+            if (marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+            {
+                precio=precio-(precio*25/100);
+            } else
+            {
+                precio=precio-(precio*20/100);
+            }
+            break;
+        case 3:
+            if (marca=="ArgentinaLuz")
+            {
+                precio=precio-(precio*15/100);
+            } else 
+            if (marca=="FelipeLamparas")
+            {
+                precio=precio-(precio*10/100);
+            }else
+            {
+                precio=precio-(precio*5/100);
+            }
+            break;
+        case 2:
+        case 1:
+            break;
+        default:
+            precio=precio-(precio*50/100);
+
+    }
+
+    if (precio>=120)    //verifico si corresponde sumar ingresos brutos
+    {
+        iBrutos = precio*10/100;
+        precio = precio+iBrutos;
+
+        alert ("Usted pagó "+iBrutos+" de IIBB");   //muestro alerta
+        
+    }
+
+    document.getElementById('precioDescuento').value = precio;  //muestro valor en cuadro de texto
+
+   
+
+
+
+
+
+
+
+
+/*
     var cantidadLamparas;   //defino variables
     var precio;
     var marca;
@@ -75,6 +149,6 @@ function CalcularPrecio ()
     }
 
     document.getElementById('precioDescuento').value=precio; //muestro total en cuadro de texto
-
+*/
 
 }

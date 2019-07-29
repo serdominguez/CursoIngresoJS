@@ -26,7 +26,7 @@ function mostrar()
 		}
 
 	}
-	*/
+	
 
 	var cont = 0;
 
@@ -36,5 +36,16 @@ function mostrar()
 
 		console.log(cont);
 	}
+
+	*/var cont;
+
+
+	var cont=0;
+
+	do {
+		cont ++
+		console.log(cont);
+	} while (cont<10);
+
 
 }//FIN DE LA FUNCIÓN

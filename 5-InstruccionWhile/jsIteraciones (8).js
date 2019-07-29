@@ -9,9 +9,9 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var numero;
-	var respuesta='si';
+	var respuesta;
 
-	while(respuesta=='si')
+	do
 	{
 		numero = prompt("Ingrese numero");
 		numero = parseInt(numero);
@@ -38,7 +38,7 @@ function mostrar()
 			respuesta=prompt("Dato incorrecto, ingrese si o no");
 			respuesta = respuesta.toLocaleLowerCase();
 				}
-	}
+	} while(respuesta=='si');
 
 
 document.getElementById('suma').value=positivo;

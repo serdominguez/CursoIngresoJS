@@ -10,8 +10,8 @@ function mostrar()
 	var acumulador=0;
 	var respuesta='si';
 
-	while (respuesta=='si')		//armo bucle para cuando se desea ingresar un nuevo numero
-	{							//se da valor 'si' por defecto para que se ingrese el primer numero
+	do					//armo bucle para cuando se desea ingresar un nuevo numero
+	{					//se da valor 'si' por defecto para que se ingrese el primer numero
 		
 		numero = prompt("ingrese numero") //pido numero y lo parseo
 		numero= parseInt(numero);
@@ -36,12 +36,12 @@ function mostrar()
 
 
 
-	}
+	} while (respuesta=='si');
 
 
 
 
-document.getElementById('suma').value=acumulador;		//calculo suma
-document.getElementById('promedio').value=acumulador/contador;	//calculo promedio
+document.getElementById('suma').value="La suma es: "+acumulador;		//calculo suma
+document.getElementById('promedio').value="El promedio es: "+acumulador/contador;	//calculo promedio
 
 }//FIN DE LA FUNCIÓN
